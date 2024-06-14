@@ -3,7 +3,7 @@ import logo from '../../assets/main-logo.svg'
 
 const KnoMore = () => {
     return <>
-        <div className='px-[200px] mt-10'>
+        <div className='md:px-[200px] px-20 mt-10'>
             <img src={logo} alt="" className='mb-8' />
             <p className='text-3xl mb-8'>Lesser bullshit leads to larger impact.</p>
 
