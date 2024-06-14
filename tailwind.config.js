@@ -8,12 +8,14 @@ export default {
     extend: {
       fontFamily: {
         header: ["Titillium Web"],
-        title:["Outfit"]
+        title:["Outfit"],
+        lora:['Lora']
       },
 
       colors: {
         "soft-black": "#18181c",
-        "grey-1": "#33343e",
+        "gray-1": "#33343e",
+        
       }
     },
   },

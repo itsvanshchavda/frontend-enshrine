@@ -2,7 +2,8 @@
 import car from "../../assets/car.png"
 import carlogo from '../../assets/car-logo.svg'
 import video from '../../assets/video.mp4'
-import HLlogo from '../../assets/'
+import HLlogo from '../../assets/hl-logo.svg'
+import Video from "../Video/Video"
 
 const Work = () => {
     return (
@@ -13,16 +14,15 @@ const Work = () => {
             </div>
 
         
-            <div className="grid grid-cols-1 gap-10 px-[5vw] sm:grid-cols-2">
-                <div className="flex flex-col items-center">
+            <div className="grid grid-cols-2 max-xl:grid-cols-1 md:px-[200px] px-20 max-sm:grid-cols-1">
+                <div className="flex flex-col justify-start items-start">
                     <img src={car} alt="car" className="rounded-xl w-full max-w-[400px] h-auto cursor-pointer hover:scale-95 duration-300"/>
                     <img src={carlogo} className="size-24 " alt="carlogo" />
-                    <p className="max-w-xs text-center  text-gray-600">Building India's first ever rental car marketplace.</p>
+                    <p className="mb-10 w-1/2 text-start  text-gray-600">Building India&apos; first ever rental car marketplace.</p>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <video src={video} className="rounded-xl max-w-full h-auto" autoPlay muted loop controls></video>
-                    <img src="" alt="" />
+                <div>
+                    <Video video={video} logo={HLlogo} />
                 </div>
             </div>
         </section>
