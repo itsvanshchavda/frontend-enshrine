@@ -7,7 +7,7 @@ const Home = () => {
 
             <Navbar />
 
-            <div className="flex py-20 px-[300px] flex-col w-full bg-soft-black h-[53vh] justify-start items-start">
+            <div className="flex py-20  max-sm:pl-10 md:px-[200px] max-xl:px-10 flex-col w-full bg-soft-black h-[53vh] justify-start items-start">
                 <div className="text-7xl font-title font-semibold">
                     <h1 className="text-white ">Great ideas</h1>
                     <h1 className="text-gray-300 opacity-80">Deserve Great</h1>

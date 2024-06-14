@@ -12,7 +12,8 @@ export default {
       },
 
       colors: {
-        "soft-black": "#18181c"
+        "soft-black": "#18181c",
+        "grey-1": "#33343e",
       }
     },
   },

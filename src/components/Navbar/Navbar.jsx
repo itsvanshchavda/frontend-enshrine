@@ -2,7 +2,7 @@ import menu from '../../assets/menu.svg'
 
 const Navbar = () => {
     return (
-        <section className="flex justify-between items-center bg-soft-black py-10 px-[300px]">
+        <section className="flex justify-between items-center bg-soft-black py-10 md:px-[200px] px-10">
             <h1 className="font-header font-semibold text-xl text-gray-400">Enshrine </h1>
 
             <div className="flex justify-center items-center gap-20 ">
@@ -18,7 +18,7 @@ const Navbar = () => {
                     </div>
                 </button>
 
-                <div className="flex items-center gap-3">
+                <div className="md:flex hidden items-center gap-3">
                     <button className="text-gray-400 font-mono text-xl text-gray-">
                         Menu
                     </button>
