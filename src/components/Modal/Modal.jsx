@@ -34,12 +34,19 @@ const Modal = ({ handleModal }) => {
     };
 
     recognitionInstance.onresult = (event) => {
-      const interimTranscription = Array.from(event.results)
-        .map(result => result[0])
-        .map(result => result.transcript)
-        .join('');
-
-      setTranscription(interimTranscription);
+      let interimTranscription = '';
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const result = event.results[i];
+        if (result.isFinal) {
+          interimTranscription += result[0].transcript + ' ';
+        }
+      }
+      setTranscription(prev => {
+        const words = prev.trim().split(' ');
+        const newWords = interimTranscription.trim().split(' ');
+        const filteredWords = newWords.filter(word => !words.includes(word));
+        return prev + ' ' + filteredWords.join(' ');
+      });
     };
 
     recognitionInstance.onerror = (event) => {
@@ -64,7 +71,7 @@ const Modal = ({ handleModal }) => {
       setError('Name cannot be empty');
       return;
     }
-    setError(''); 
+    setError('');
     if (isListening) {
       recognition.stop();
     } else {
@@ -77,7 +84,7 @@ const Modal = ({ handleModal }) => {
     if (isListening) {
       recognition.stop();
     }
-    setTranscription(''); // Clear any existing transcription
+    setTranscription('');
   };
 
   return (
