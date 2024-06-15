@@ -15,6 +15,8 @@ export default {
       colors: {
         "soft-black": "#18181c",
         "gray-1": "#33343e",
+        "white-1":"#a3a5b8",
+        
         
       }
     },
