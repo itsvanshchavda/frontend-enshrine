@@ -38,7 +38,7 @@ const Blog = () => {
 
 
             {/* Blogs  */}
-            <div className="grid max-xl:grid-cols-1 grid-cols-3 cursor-pointer py-20 md:px-[200px] px-14 gap-10">
+            <div className="grid max-xl:grid-cols-1 grid-cols-3 cursor-pointer py-20 md:px-[200px] px-11 gap-10">
                 <div>
                     <div className="w-[280px] h-[250px] bg-white rounded-lg shadow-lg overflow-hidden ">
                         <img src={blog1} alt="" className="w-full h-full object-cover hover:scale-105 duration-300" />
