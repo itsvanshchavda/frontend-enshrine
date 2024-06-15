@@ -18,11 +18,11 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <h1 className="font-header font-bold text-gray-400 text-2xl md:text-3xl">Enshrine</h1>
         <div className="flex items-center gap-4 md:gap-8 mt-5">
-          <img src={icon1} alt="Facebook" className="w-6 h-6 md:w-8 md:h-8" />
-          <img src={icon2} alt="LinkedIn" className="w-6 h-6 md:w-8 md:h-8" />
-          <img src={icon3} alt="X" className="w-6 h-6 md:w-8 md:h-8" />
-          <img src={icon4} alt="Instagram" className="w-6 h-6 md:w-8 md:h-8" />
-          <img src={icon5} alt="Dribble" className="w-6 h-6 md:w-8 md:h-8" />
+          <img src={icon1} alt="Facebook" className="w-6 h-6 md:w-8 md:h-8 hover:scale-105 duration-300 cursor-pointer" />
+          <img src={icon2} alt="LinkedIn" className="w-6 h-6 md:w-8 md:h-8 hover:scale-105 duration-300 cursor-pointer" />
+          <img src={icon3} alt="X" className="w-6 h-6 md:w-8 md:h-8 hover:scale-105 duration-300 cursor-pointer" />
+          <img src={icon4} alt="Instagram" className="w-6 h-6 md:w-8 md:h-8 hover:scale-105 duration-300 cursor-pointer" /> 
+          <img src={icon5} alt="Dribble" className="w-6 h-6 md:w-8 md:h-8 hover:scale-105 duration-300 cursor-pointer" />
         </div>
         <p className="text-gray-500 font-title font-bold mt-5 md:mt-10">Enshrine Global Systems</p>
       </div>

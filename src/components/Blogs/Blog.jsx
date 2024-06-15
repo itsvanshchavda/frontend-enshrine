@@ -1,14 +1,39 @@
-
+import { motion } from 'framer-motion';
 import blog1 from '../../assets/blog-1.png'
 import blog2 from '../../assets/blog-2.png'
 import blog3 from '../../assets/blog-3.png'
 
 const Blog = () => {
+    const textVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+            },
+        },
+    };
     return (
         <section className="pb-20 py-20  bg-[#f7f8fb] mt-10">
             <div className="md:px-[200px] px-20">
-                <h1 className="md:text-4xl text-3xl mb-3 text-gray-1 font-bold">Pick Our Brains</h1>
-                <p className="md:text-2xl text-xl font-lora text-gray-400">News, Blogs, Good Intentions etc.</p>
+                <motion.h1
+                    className="md:text-4xl text-3xl mb-3 text-gray-1 font-bold"
+                    initial="hidden"
+                    animate="visible"
+                    variants={textVariants}
+                >
+                    Pick Our Brains
+                </motion.h1>
+                <motion.p
+                    className="md:text-2xl text-xl font-lora text-gray-400"
+                    initial="hidden"
+                    animate="visible"
+                    variants={textVariants}
+                >
+                    News, Blogs, Good Intentions etc.
+                </motion.p>
             </div>
 
 
