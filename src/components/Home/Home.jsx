@@ -25,7 +25,7 @@ const Home = () => {
                     variants={titleVariants}
                 >
                     <motion.h1 className="text-white">Great ideas</motion.h1>
-                    <motion.h1 className="text-gray-300 opacity-80">Deserve Great</motion.h1>
+                    <motion.h1 className="text-gray-300 opacity-80 ">Deserve Great</motion.h1>
                     <motion.h1 className="text-gray-300 opacity-80">Products</motion.h1>
                 </motion.div>
             </div>
